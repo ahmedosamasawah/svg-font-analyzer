@@ -53,6 +53,13 @@ run = '''
 VITE_PORT = 5020
 VITE_API_URL = "http://localhost:8000"
 IS_DEBUG = 1
+ALLOWED_HOSTS = '["http://localhost", "http://127.0.0.1", "http://[::1]"]'
+
+
+GRANIAN_RELOAD = 1
+GRANIAN_RELOAD_IGNORE_PATHS = 'src public'
+GRANIAN_PORT = 8030
+GRANIAN_WORKERS = 1
 
 [settings]
 python.uv_venv_auto = true
