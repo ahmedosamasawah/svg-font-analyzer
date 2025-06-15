@@ -25,7 +25,7 @@ run = 'pnpm i && pnpm build'
 [tasks.deploy_setup]
 run = '''
 ssh $DEPLOY_HOST '
-  set -e
+  set -ex
   mkdir -p /srv/apps/svg-font-analyzer/client
   cd /srv/apps/svg-font-analyzer
   cat - > svg-font-analyzer.service
